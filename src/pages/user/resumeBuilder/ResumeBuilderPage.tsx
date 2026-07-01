@@ -21,11 +21,9 @@ import { resumeApi } from "../../../api/resume.api";
 import { toBackendContent } from "../../../utils/resumeAdapter";
 import TemplateSelector from "../../../components/resumeTemplates/TemplateSelector";
 import ExportPDFButton from "../../../components/resumeBuilder/ExportPDFButton";
-import { useAuthStore } from "../../../store/authStore";
 
 export default function ResumeBuilderPage() {
     const { resumeId } = useParams();
-    const userPlan = useAuthStore((s) => s.user?.plan);
     const navigate = useNavigate();
     const [searchParams] = useSearchParams();
     const store = useResumeBuilderStore();
@@ -135,7 +133,7 @@ export default function ResumeBuilderPage() {
                     {renderForm()}
 
                     <ExportPDFButton previewRef={previewRef} />
-                    <TemplateSelector plan={userPlan} />
+                    <TemplateSelector />
                 </div>
 
                 <div className="min-w-0 flex-1">

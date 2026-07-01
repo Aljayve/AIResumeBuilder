@@ -2,12 +2,11 @@ import { Check } from "lucide-react";
 import { useResumeBuilderStore, type ResumeTemplate } from "../../store/resumeBuilderStore";
 import TemplatePreview from "../templates/TemplatePreview";
 
-const allTemplates: { value: ResumeTemplate; label: string; premium?: boolean }[] = [
+const templates: { value: ResumeTemplate; label: string }[] = [
     { value: "ats-classic", label: "ATS Classic" },
     { value: "modern", label: "Modern" },
     { value: "professional", label: "Professional" },
     { value: "accessible", label: "Accessible" },
-    { value: "creative", label: "Creative", premium: true },
     { value: "technical", label: "Technical" },
     { value: "header-band", label: "Header Band" },
     { value: "inspired", label: "Inspired" },
@@ -18,17 +17,9 @@ const allTemplates: { value: ResumeTemplate; label: string; premium?: boolean }[
     { value: "sidebar-left", label: "Sidebar Left" },
 ];
 
-interface Props {
-    plan?: string;
-}
-
-export default function TemplateSelector({ plan }: Props) {
+export default function TemplateSelector() {
     const selectedTemplate = useResumeBuilderStore((s) => s.selectedTemplate);
     const setSelectedTemplate = useResumeBuilderStore((s) => s.setSelectedTemplate);
-
-    const templates = plan === "free" || !plan
-        ? allTemplates.filter((t) => !t.premium)
-        : allTemplates;
 
     return (
         <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03]">
