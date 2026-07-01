@@ -1,0 +1,80 @@
+export const templates = [
+    {
+        id: 1,
+        name: "ATS Classic",
+        category: "ATS Friendly",
+        description: "Clean, parseable layout optimized for ATS systems.",
+    },
+    {
+        id: 2,
+        name: "Modern",
+        category: "Modern",
+        description: "Sleek and minimal design for modern professionals.",
+    },
+    {
+        id: 3,
+        name: "Professional",
+        category: "Corporate",
+        description: "Traditional two-column design suited for corporate roles.",
+    },
+    {
+        id: 4,
+        name: "Accessible",
+        category: "ATS Friendly",
+        description: "Screen-reader-friendly layout with clean typography.",
+    },
+    {
+        id: 5,
+        name: "Creative",
+        category: "Design",
+        description: "Visual layout for design and creative roles.",
+    },
+    {
+        id: 6,
+        name: "Technical",
+        category: "Tech",
+        description: "Technical layout highlighting skills, projects, and code.",
+    },
+    {
+        id: 7,
+        name: "Header Band",
+        category: "Modern",
+        description: "Bold header band design with color accent sections.",
+    },
+    {
+        id: 8,
+        name: "Inspired",
+        category: "Modern",
+        description: "Modern layout with icon-driven section headers.",
+    },
+    {
+        id: 9,
+        name: "Plain",
+        category: "ATS Friendly",
+        description: "Straightforward no-frills layout for maximum ATS compatibility.",
+    },
+    {
+        id: 10,
+        name: "Versatile",
+        category: "Corporate",
+        description: "Flexible layout that works across industries and roles.",
+    },
+    {
+        id: 11,
+        name: "Straightforward",
+        category: "ATS Friendly",
+        description: "Simple single-column design with clear section hierarchy.",
+    },
+    {
+        id: 12,
+        name: "Sidebar Right",
+        category: "Modern",
+        description: "Right-sidebar layout with contact and skills panel.",
+    },
+    {
+        id: 13,
+        name: "Sidebar Left",
+        category: "Modern",
+        description: "Left-sidebar layout highlighting profile and expertise.",
+    },
+];
